@@ -6,7 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pickmor: Shop, Earn, and Save with Top Vendors and Seamless Service</title>
-    <link rel="stylesheet" href="{{ asset('/assets/css/main.css') }}">
+    <!-- bootstrap 5 minified css source -->
+    <link rel="stylesheet" href="{{asset('/assets/css/bootstrap.min.css')}}">
+    <!-- font awesome 5 icons minified css source -->
+    <link rel="stylesheet" href="{{asset('/assets/css/all.min.css')}}">
+    <!-- jquery nice select css source -->
+    <link rel="stylesheet" href="{{asset('/assets/css/nice-select.css')}}">
+    <!-- magnific popup-1.1.0 css source -->
+    <link rel="stylesheet" href="{{asset('/assets/css/magnific-popup.css')}}">
+    <!-- owl carousel-2.3.4 minified css source -->
+    <link rel="stylesheet" href="{{asset('/assets/css/owl.carousel.min.css')}}">
+    <!-- owl carousel-2.3.4 theme default minified css source -->
+    <link rel="stylesheet" href="{{asset('/assets/css/owl.theme.default.min.css')}}">
+    <!-- animate-4.1.1 minified css source -->
+    <link rel="stylesheet" href="{{asset('/assets/css/animate.min.css')}}">
+    <!-- custom css source -->
+    <link rel="stylesheet" href="{{asset('/assets/css/main.css')}}">
+
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset('/apple-touch-icon.png')}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset('/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{asset('/favicon-16x16.png')}}">
@@ -15,1238 +31,706 @@
 </head>
 <body>
 
-        <!--header section start-->
-        <header class="header">
-            <!--start navbar-->
-            <nav class="navbar navbar-expand-lg fixed-top bg-transparent">
-                <div class="container">
-                    <a class="navbar-brand" href="/">
-                        <img width="30%" src="{{asset('/assets/images/logo-white.png')}}" alt="logo" class="img-fluid">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="ti-menu"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse h-auto" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto menu">
-                            <li><a href="#"> Home</a></li>
-                            <li><a href="#about" class="page-scroll">About</a></li>
-                            <li><a href="#features" class="page-scroll">Features</a></li>
-                            <li><a href="#screenshots" class="page-scroll">Screenshots</a></li>
-                            <li><a href="#process" class="page-scroll">Process</a></li>
-                            <li><a href="#pricing" class="page-scroll">Pricing</a></li>
-                            <li><a href="#contact" class="page-scroll">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-        <!--header section end-->
-
-
-        <div class="main">
-
-            <!--hero section start-->
-            <section class="position-relative bg-image ptb-100" image-overlay="9">
-                <div class="background-image-wraper bg-position-2" style="background: url('{{asset('/assets/images/offer-bg.svg')}}'); opacity: 1;"></div>
-                <div class="container">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col-md-7 col-lg-6">
-                            <div class="offer-content-wrap text-white ptb-80">
-                                <h3 class="text-white"><span>Black Friday</span> Super Sale!</h3>
-                                <h1 class="text-white big-text mb-0"><span>UP TO</span> 90% OFF</h1>
-                                <p class="lead">Limited time offer download and updated our app, synthesize accurate users whereas communities assertively evolve technically real-time materials.</p>
-                                <div class="action-btns my-3">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item">
-                                            <a href="#" class="d-flex align-items-center app-download-btn btn btn-white btn-rounded">
-                                                <span class="fab fa-apple icon-size-sm mr-3"></span>
-                                                <div class="download-text text-left">
-                                                    <small>Download form</small>
-                                                    <h5 class="mb-0">App Store</h5>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a href="#" class="d-flex align-items-center app-download-btn btn btn-white btn-rounded">
-                                                <span class="fab fa-google-play icon-size-sm mr-3"></span>
-                                                <div class="download-text text-left">
-                                                    <small>Download form</small>
-                                                    <h5 class="mb-0">Google Play</h5>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-5 col-lg-6">
-                            <div class="offer-tag-wrap position-relative z-index">
-                                <img src="{{asset('/assets/images/app-offer-img.svg')}}" alt="app" class="img-fluid">
-                                <div class="offer-badge">
-                                    <div class="offer-content">
-                                        <div class="offer-text">
-                                            <span>$19</span>
-                                            <small>Limited Time Only</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--end row-->
-                </div>
-            </section>
-
-
-            <!--hero section end-->
-
-            <!--promo section start-->
-            <section class="promo-section ptb-100">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 col-lg-8">
-                            <div class="section-heading text-center">
-                                <h2>Why Pickmor Different?</h2>
-                                <p>Uniquely repurpose strategic core competencies with progressive content. Assertively transition ethical imperatives and collaborative manufactured products. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-md-center justify-content-sm-center">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card border-0 single-promo-card single-promo-hover-2 text-center p-2 mt-4">
-                                <div class="card-body">
-                                    <div class="pb-2">
-                                        <span class="fas fa-cubes icon-size-lg color-primary"></span>
-                                    </div>
-                                    <div class="pt-2 pb-3">
-                                        <h5>Fully functional</h5>
-                                        <p class="mb-0">Phosfluorescently target bleeding sources through viral methodsp progressively expedite empowered.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card border-0 single-promo-card single-promo-hover-2 text-center p-2 mt-4">
-                                <div class="card-body">
-                                    <div class="pb-2">
-                                        <span class="fas fa-headset icon-size-lg color-primary"></span>
-                                    </div>
-                                    <div class="pt-2 pb-3">
-                                        <h5>24/7 Live Chat</h5>
-                                        <p class="mb-0">Enthusiastically productivate interactive interfaces after energistically scale client-centered catalysts.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="card border-0 single-promo-card single-promo-hover-2 text-center p-2 mt-4">
-                                <div class="card-body">
-                                    <div class="pb-2">
-                                        <span class="fas fa-lock icon-size-lg color-primary"></span>
-                                    </div>
-                                    <div class="pt-2 pb-3">
-                                        <h5>Secure Data</h5>
-                                        <p class="mb-0">Synergistically architect virtual content solutions. Monotonectally communicate cooperative solutions.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--promo section end-->
-
-            <!--about us section start-->
-            <section id="about" class="about-section gray-light-bg position-relative overflow-hidden ptb-100">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-md-6 col-lg-6">
-                            <div class="image-wrap">
-                                <img class="img-fluid" src="{{asset('/assets/images/mobile-pana.svg')}}" alt="animation image">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="feature-contents section-heading">
-                                <h2>The Most Useful Resource Created For Designers</h2>
-                                <p>Objectively deliver professional value with diverse web-readiness.
-                                    Collaboratively transition wireless customer service without goal-oriented catalysts for
-                                    change. Collaboratively.</p>
-
-                                <ul class="check-list-wrap list-two-col py-3">
-                                    <li>Data driven quality review</li>
-                                    <li>Secure work environment</li>
-                                    <li>24x7 coverage</li>
-                                    <li>Lifetime updates</li>
-                                    <li>Management team</li>
-                                    <li>Tech support</li>
-                                    <li>Integration ready</li>
-                                    <li>Tons of assets</li>
-                                    <li>Compliance driven process</li>
-                                    <li>Workforce management</li>
-                                </ul>
-                                <div class="row pt-4">
-                                    <div class="col-4 col-lg-3 border-right">
-                                        <div class="count-data text-center">
-                                            <h4 class="count-number mb-0 color-primary font-weight-bold">1023</h4>
-                                            <span>Customers</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 col-lg-3 border-right">
-                                        <div class="count-data text-center">
-                                            <h4 class="count-number mb-0 color-primary font-weight-bold">5470</h4>
-                                            <span>Downloads</span>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 col-lg-3 border-right">
-                                        <div class="count-data text-center">
-                                            <h4 class="count-number mb-0 color-primary font-weight-bold">3560</h4>
-                                            <span>Satisfied</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--about us section end-->
-
-            <!--features section start-->
-            <section id="features" class="feature-section ptb-100 ">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9 col-lg-8">
-                            <div class="section-heading text-center mb-5">
-                                <h2>App Features</h2>
-                                <p class="text-muted para-desc mb-0 mx-auto">Start working with that can provide everything you need to generate awareness, drive traffic, connect. Efficiently transform granular value with client-focused content. Energistically redefine market.</p>
-                            </div>
-                        </div>
-                        <!--end col-->
-                    </div>
-                    <!--end row-->
-
-                    <div class="row align-items-center">
-                        <div class="col-lg-8 col-md-12">
-                            <div class="row align-items-center">
-                                <div class="col-md-6 col-12">
-                                    <div class="features-single-wrap mb-sm-0 mb-md-5 mb-lg-5">
-                                        <span class="ti-layout p-3 mr-4 mt-1 rounded-circle float-left"></span>
-                                        <div class="features-single-content d-block overflow-hidden">
-                                            <h5 class="mb-2">Use On Any Device</h5>
-                                            <p>composed in a pseudo-Latin language which more or less pseudo-Latin language corresponds.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-12">
-                                    <div class="features-single-wrap mb-sm-0 mb-md-5 mb-lg-5">
-                                        <span class="ti-themify-favicon-alt p-3 mr-4 mt-1 rounded-circle float-left"></span>
-                                        <div class="features-single-content d-block overflow-hidden">
-                                            <h5 class="mb-2">Themify Icon</h5>
-                                            <p>composed in a pseudo-Latin language which more or less pseudo-Latin language corresponds.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-12">
-                                    <div class="features-single-wrap mb-sm-0 mb-md-5 mb-lg-5">
-                                        <span class="ti-eye p-3 mr-4 mt-1 rounded-circle float-left"></span>
-                                        <div class="features-single-content d-block overflow-hidden">
-                                            <h5 class="mb-2">Retina Ready</h5>
-                                            <p>composed in a pseudo-Latin language which more or less pseudo-Latin language corresponds.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-12">
-                                    <div class="features-single-wrap mb-sm-0 mb-md-5 mb-lg-5">
-                                        <span class="ti-thumb-up p-3 mr-4 mt-1 rounded-circle float-left"></span>
-                                        <div class="features-single-content d-block overflow-hidden">
-                                            <h5 class="mb-2">W3c Valid Code</h5>
-                                            <p>composed in a pseudo-Latin language which more or less pseudo-Latin language corresponds.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-12">
-                                    <div class="features-single-wrap mb-sm-0 mb-md-5 mb-lg-5">
-                                        <span class="ti-mobile p-3 mr-4 mt-1 rounded-circle float-left"></span>
-                                        <div class="features-single-content d-block overflow-hidden">
-                                            <h5 class="mb-2">Fully Responsive</h5>
-                                            <p>composed in a pseudo-Latin language which more or less pseudo-Latin language corresponds.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-6 col-12">
-                                    <div class="features-single-wrap mb-sm-0 mb-md-5 mb-lg-5">
-                                        <span class="ti-world p-3 mr-4 mt-1 rounded-circle float-left"></span>
-                                        <div class="features-single-content d-block overflow-hidden">
-                                            <h5 class="mb-2">Browser Compatibility</h5>
-                                            <p>composed in a pseudo-Latin language which more or less pseudo-Latin language corresponds.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <img src="{{asset('/assets/images/app-mobile-image.png')}}" class="img-fluid mx-auto d-lg-block d-none" alt="app screen">
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--features section end-->
-
-            <!--download button section start-->
-            <section class="bg-image ptb-100" image-overlay="8">
-                <div class="background-image-wraper" style="background: url('{{asset('/assets/images/cta-bg.jpg')}}')no-repeat center center / cover fixed; opacity: 1;"></div>
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9 col-lg-8">
-                            <div class="section-heading text-center mb-1 text-white">
-                                <h2 class="text-white">Download Our Apps</h2>
-                                <p>Start working with that can provide everything you need to generate awareness, drive traffic, connect. Efficiently transform granular value with client-focused content. Energistically redefine market.</p>
-                                <div class="action-btns">
-                                    <ul class="list-inline">
-                                        <li class="list-inline-item my-2">
-                                            <a href="#" class="d-flex align-items-center app-download-btn btn btn-brand-02 btn-rounded">
-                                                <span class="fab fa-windows icon-size-sm mr-3"></span>
-                                                <div class="download-text text-left">
-                                                    <small>Download form</small>
-                                                    <h5 class="mb-0">Windows</h5>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item my-2">
-                                            <a href="#" class="d-flex align-items-center app-download-btn btn btn-brand-02 btn-rounded">
-                                                <span class="fab fa-apple icon-size-sm mr-3"></span>
-                                                <div class="download-text text-left">
-                                                    <small>Download form</small>
-                                                    <h5 class="mb-0">App Store</h5>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li class="list-inline-item my-2">
-                                            <a href="#" class="d-flex align-items-center app-download-btn btn btn-brand-02 btn-rounded">
-                                                <span class="fab fa-google-play icon-size-sm mr-3"></span>
-                                                <div class="download-text text-left">
-                                                    <small>Download form</small>
-                                                    <h5 class="mb-0">Google Play</h5>
-                                                </div>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!--end col-->
-                    </div>
-                    <!--end row-->
-                </div>
-            </section>
-
-
-            <!--download button section end-->
-
-            <!--screenshots section start-->
-            <section id="screenshots" class="screenshots-section pb-100 pt-100 gray-light-bg">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9 col-lg-8">
-                            <div class="section-heading text-center mb-5">
-                                <h2>Apps Screenshots</h2>
-                                <p>Proactively impact value-added channels via backend leadership skills. Efficiently revolutionize worldwide networks whereas strategic catalysts for change. </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--start app screen carousel-->
-                    <div class="screenshot-wrap">
-                        <div class="screenshot-frame"></div>
-                        <div class="screen-carousel owl-carousel owl-theme dot-indicator">
-                            <img src="{{asset('/assets/images/01.jpg')}}" class="img-fluid" alt="screenshots">
-                            <img src="{{asset('/assets/images/02.jpg')}}" class="img-fluid" alt="screenshots">
-                            <img src="{{asset('/assets/images/03.jpg')}}" class="img-fluid" alt="screenshots">
-                            <img src="{{asset('/assets/images/04.jpg')}}" class="img-fluid" alt="screenshots">
-                            <img src="{{asset('/assets/images/05.jpg')}}" class="img-fluid" alt="screenshots">
-                            <img src="{{asset('/assets/images/06.jpg')}}" class="img-fluid" alt="screenshots">
-                        </div>
-                    </div>
-                    <!--end app screen carousel-->
-                </div>
-            </section>
-
-
-            <!--screenshots section end-->
-
-            <!--work process start-->
-            <section id="process" class="work-process-section position-relative  ptb-100 ">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9 col-lg-8">
-                            <div class="section-heading text-center mb-5">
-                                <h2>Our Work Process</h2>
-                                <p>
-                                    Professional hosting at an affordable price. Distinctively recaptiualize principle-centered core competencies through client-centered core competencies.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-md-center justify-content-sm-center">
-                        <div class="col-md-12 col-lg-6">
-                            <div class="work-process-wrap">
-                                <div class="process-single-item">
-                                    <div class="process-icon-item left-shape">
-                                        <div class="d-flex align-items-center">
-                                            <div class="process-icon mr-4">
-                                                <i class="fas fa-project-diagram color-primary"></i>
-                                            </div>
-                                            <div class="process-content text-left">
-                                                <h5>Planning Idea</h5>
-                                                <p>Holisticly architect sustainable meta-services for process-centric core competencies. Enthusiastically re-engineer best-of-breed outsourcing.</p>
-                                            </div>
-                                        </div>
-                                        <svg x="0px" y="0px" width="312px" height="130px">
-                                            <path class="dashed1" fill="none" stroke="rgb(95, 93, 93)" stroke-width="1" stroke-dasharray="1300" stroke-dashoffset="0" d="M3.121,2.028 C3.121,2.028 1.003,124.928 99.352,81.226 C99.352,81.226 272.319,21.200 310.000,127.338"></path>
-                                            <path class="dashed2" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="6" stroke-dashoffset="1300" d="M3.121,2.028 C3.121,2.028 1.003,124.928 99.352,81.226 C99.352,81.226 272.319,21.200 310.000,127.338 "></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="process-single-item">
-                                    <div class="process-icon-item right-shape">
-                                        <div class="d-flex align-items-center">
-                                            <div class="process-icon ml-4">
-                                                <i class="fas fa-puzzle-piece color-primary"></i>
-                                            </div>
-                                            <div class="process-content text-right">
-                                                <h5>Developed Final Product</h5>
-                                                <p>Monotonectally harness holistic web-readiness after multimedia based catalysts for change. Completely brand front-end systems before visionary.</p>
-                                            </div>
-                                        </div>
-                                        <svg x="0px" y="0px" width="312px" height="130px">
-                                            <path class="dashed1" fill="none" stroke="rgb(95, 93, 93)" stroke-width="1" stroke-dasharray="1300" stroke-dashoffset="0" d="M311.000,0.997 C311.000,0.997 313.123,123.592 214.535,79.996 C214.535,79.996 41.149,20.122 3.377,125.996"></path>
-                                            <path class="dashed2" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="6" stroke-dashoffset="1300" d="M311.000,0.997 C311.000,0.997 313.123,123.592 214.535,79.996 C214.535,79.996 41.149,20.122 3.377,125.996"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="process-single-item">
-                                    <div class="process-icon-item left-shape mb-0">
-                                        <div class="d-flex align-items-center">
-                                            <div class="process-icon mr-4">
-                                                <i class="fas fa-truck color-primary"></i>
-                                            </div>
-                                            <div class="process-content text-left">
-                                                <h5>Deliver to Customer</h5>
-                                                <p>Monotonectally plagiarize synergistic e-business for stand-alone communities. Professionally enhance visionary manufactured products progressive.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6">
-                            <div class="img-wrap">
-                                <img src="{{asset('/assets/images/app-mobile-image-3.png')}}" alt="features" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <!--work process end-->
-
-            <!--pricing section start-->
-            <section id="pricing" class="pricing-section ptb-100 gray-light-bg">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9 col-lg-8">
-                            <div class="section-heading text-center mb-4">
-                                <h2>Our Flexible Price</h2>
-                                <p>
-                                    Professional hosting at an affordable price. Distinctively recaptiualize principle-centered
-                                    core competencies through client-centered
-                                    core competencies.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center justify-content-md-center justify-content-center">
-                        <div class="col-12">
-                            <div class="d-flex justify-content-center text-center">
-                                <label class="pricing-switch-wrap">
-                                    <span class="beforeinput year-switch text-success">
-                                    Monthly
-                                </span>
-                                    <input type="checkbox" class="d-none" id="js-contcheckbox">
-                                    <span class="switch-icon"></span>
-                                    <span class="afterinput year-switch">
-                                        Yearly
-                                </span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div class="text-center bg-white single-pricing-pack mt-4">
-                                <div class="price-img pt-4">
-                                    <img src="{{asset('/assets/images/priching-img-1.png')}}" alt="price" width="120" class="img-fluid">
-                                </div>
-                                <div class="py-4 border-0 pricing-header">
-                                    <div class="price text-center mb-0 monthly-price color-secondary" style="display: block;">$19<span>.99</span></div>
-                                    <div class="price text-center mb-0 yearly-price color-secondary" style="display: none;">$69<span>.99</span></div>
-                                </div>
-                                <div class="price-name">
-                                    <h5 class="mb-0">Standard</h5>
-                                </div>
-                                <div class="pricing-content">
-                                    <ul class="list-unstyled mb-4 pricing-feature-list">
-                                        <li><span>Limited</span> access for a month</li>
-                                        <li><span>15</span> customize sub page</li>
-                                        <li class="text-deem"><span>105</span> disk space</li>
-                                        <li class="text-deem"><span>3</span> domain access</li>
-                                        <li class="text-deem">24/7 phone support</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-outline-brand-02 btn-rounded mb-3" target="_blank">Purchase now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div class="popular-price bg-white text-center single-pricing-pack mt-4">
-                                <div class="price-img pt-4">
-                                    <img src="{{asset('/assets/images/priching-img-2.png')}}" alt="price" width="120" class="img-fluid">
-                                </div>
-                                <div class="py-4 border-0 pricing-header">
-                                    <div class="price text-center mb-0 monthly-price color-secondary" style="display: block;">$49<span>.99</span></div>
-                                    <div class="price text-center mb-0 yearly-price color-secondary" style="display: none;">$159<span>.99</span></div>
-                                </div>
-                                <div class="price-name">
-                                    <h5 class="mb-0">Premium</h5>
-                                </div>
-                                <div class="pricing-content">
-                                    <ul class="list-unstyled mb-4 pricing-feature-list">
-                                        <li><span>Unlimited</span> access for a month</li>
-                                        <li><span>25</span> customize sub page</li>
-                                        <li><span>150</span> disk space</li>
-                                        <li class="text-deem"><span>5</span> domain access</li>
-                                        <li class="text-deem">24/7 phone support</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-brand-02 btn-rounded mb-3" target="_blank">Purchase now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-8">
-                            <div class="text-center bg-white single-pricing-pack mt-4">
-                                <div class="price-img pt-4">
-                                    <img src="{{asset('/assets/images/priching-img-3.png')}}" alt="price" width="120" class="img-fluid">
-                                </div>
-                                <div class="py-4 border-0 pricing-header">
-                                    <div class="price text-center mb-0 monthly-price color-secondary" style="display: block;">$69<span>.99</span></div>
-                                    <div class="price text-center mb-0 yearly-price color-secondary" style="display: none;">$259<span>.99</span></div>
-                                </div>
-                                <div class="price-name">
-                                    <h5 class="mb-0">Unlimited</h5>
-                                </div>
-                                <div class="pricing-content">
-                                    <ul class="list-unstyled mb-4 pricing-feature-list">
-                                        <li><span>Limited</span> access for a month</li>
-                                        <li><span>15</span> customize sub page</li>
-                                        <li><span>120</span> disk space</li>
-                                        <li><span>5</span> domain access</li>
-                                        <li>24/7 phone support</li>
-                                    </ul>
-                                    <a href="#" class="btn btn-outline-brand-02 btn-rounded mb-3" target="_blank">Purchase now</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="support-cta text-center mt-5">
-                                <h5 class="mb-1"><span class="ti-headphone-alt color-primary mr-3"></span>We're Here to Help You
-                                </h5>
-                                <p>Have some questions? <a href="#">Chat with us now</a>, or <a href="#">send us an email</a> to
-                                    get in touch.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--pricing section end-->
-
-            <!--counter section start-->
-            <section class="counter-section gradient-bg ptb-40">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="text-white p-2 count-data text-center my-3">
-                                <span class="fas fa-users icon-size-lg mb-2"></span>
-                                <h3 class="count-number mb-1 text-white font-weight-bolder">21023</h3>
-                                <span>Customers</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="text-white p-2 count-data text-center my-3">
-                                <span class="fas fa-cloud-download-alt icon-size-lg mb-2"></span>
-                                <h3 class="count-number mb-1 text-white font-weight-bolder">44023</h3>
-                                <span>Downloads</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="text-white p-2 count-data text-center my-3">
-                                <span class="fas fa-smile icon-size-lg mb-2"></span>
-                                <h3 class="count-number mb-1 text-white font-weight-bolder">35023</h3>
-                                <span>Satisfied</span>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="text-white p-2 count-data text-center my-3">
-                                <span class="fas fa-mug-hot icon-size-lg mb-2"></span>
-                                <h3 class="count-number mb-1 text-white font-weight-bolder">2323</h3>
-                                <span>Cup of Coffee</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--counter section end-->
-
-            <!--faq or accordion section start-->
-            <section id="faq" class="ptb-100 gray-light-bg">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9 col-lg-8">
-                            <div class="section-heading text-center mb-5">
-                                <h2>Frequently Asked Queries</h2>
-                                <p>Efficiently productivate reliable paradigms before ubiquitous models. Continually utilize frictionless expertise whereas tactical relationships. Still have questions? Contact us</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-md-12 col-lg-6 mb-5 mb-md-5 mb-sm-5 mb-lg-0">
-                            <div class="img-wrap">
-                                <img src="{{asset('/assets/images/health.png')}}" alt="download" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div id="accordion" class="accordion faq-wrap">
-                                <div class="card mb-3">
-                                    <a class="card-header " data-toggle="collapse" href="#collapse0" aria-expanded="false">
-                                        <h6 class="mb-0 d-inline-block">Which license do I need?</h6>
-                                    </a>
-                                    <div id="collapse0" class="collapse show" data-parent="#accordion" style="">
-                                        <div class="card-body white-bg">
-                                            <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card my-3">
-                                    <a class="card-header collapsed" data-toggle="collapse" href="#collapse1" aria-expanded="false">
-                                        <h6 class="mb-0 d-inline-block">How do I get access to a theme?</h6>
-                                    </a>
-                                    <div id="collapse1" class="collapse " data-parent="#accordion" style="">
-                                        <div class="card-body white-bg">
-                                            <p>Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus. Seamlessly optimize empowered testing procedures before revolutionary processes. Progressively facilitate client-centered technologies whereas extensive users. Authoritatively. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card my-3">
-                                    <a class="card-header collapsed" data-toggle="collapse" href="#collapse2" aria-expanded="false">
-                                        <h6 class="mb-0 d-inline-block">How do I see previous orders?</h6>
-                                    </a>
-                                    <div id="collapse2" class="collapse " data-parent="#accordion" style="">
-                                        <div class="card-body white-bg">
-                                            <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card mt-3">
-                                    <a class="card-header collapsed" data-toggle="collapse" href="#collapse3" aria-expanded="false">
-                                        <h6 class="mb-0 d-inline-block">Support related issues for the template?</h6>
-                                    </a>
-                                    <div id="collapse3" class="collapse " data-parent="#accordion" style="">
-                                        <div class="card-body white-bg">
-                                            <p>Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table. Professionally embrace customer directed value vis-a-vis high-quality portals. Quickly underwhelm B2C users with maintainable benefits. </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--faq or accordion section end-->
-
-            <!--our team section start-->
-            <section class="team-two-section ptb-100 ">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9 col-lg-8">
-                            <div class="section-heading text-center">
-                                <h2>Our Team Members</h2>
-                                <p>Authoritatively mesh intuitive paradigms vis-a-vis goal-oriented partnerships. Continually extend open-source outside the box thinking after focused catalysts.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-lg-3">
-                            <div class="single-team-wrap bg-white text-center border rounded p-4 mt-4">
-                                <img src="{{asset('/assets/images/team-member-1.png')}}" alt="team image" width="120" class="img-fluid m-auto pb-4">
-                                <div class="team-content">
-                                    <h5 class="mb-0">Richard Ford</h5>
-                                    <span>Instructor of Mathematics</span>
-                                    <p class="mt-3">Authoritatively engage leading-edge processes tactical capital </p>
-                                    <ul class="list-inline social-list-default social-color icon-hover-top-bottom">
-                                        <li class="list-inline-item">
-                                            <a class="facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="dribbble" href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="linkedin" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="single-team-wrap bg-white text-center border rounded p-4 mt-4">
-                                <img src="{{asset('/assets/images/team-member-2.png')}}" alt="team image" width="120" class="img-fluid m-auto pb-4">
-                                <div class="team-content">
-                                    <h5 class="mb-0">Kely Roy</h5>
-                                    <span>Lead Designer</span>
-                                    <p class="mt-3">Monotonectally engage sticky collaborative markets synergistically</p>
-                                    <ul class="list-inline social-list-default social-color icon-hover-top-bottom">
-                                        <li class="list-inline-item">
-                                            <a class="facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="dribbble" href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="linkedin" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="single-team-wrap bg-white text-center border rounded p-4 mt-4">
-                                <img src="{{asset('/assets/images/team-member-3.png')}}" alt="team image" width="120" class="img-fluid m-auto pb-4">
-                                <div class="team-content">
-                                    <h5 class="mb-0">Gerald Nichols</h5>
-                                    <span>Managing Director</span>
-                                    <p class="mt-3">Assertively procrastinate standardized whereas technically sound</p>
-                                    <ul class="list-inline social-list-default social-color icon-hover-top-bottom">
-                                        <li class="list-inline-item">
-                                            <a class="facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="dribbble" href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="linkedin" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3">
-                            <div class="single-team-wrap bg-white text-center border rounded p-4 mt-4">
-                                <img src="{{asset('/assets/images/team-member-4.png')}}" alt="team image" width="120" class="img-fluid m-auto pb-4">
-                                <div class="team-content">
-                                    <h5 class="mb-0">Gerald Nichols</h5>
-                                    <span>Team Manager</span>
-                                    <p class="mt-3">Synergistically actualize out the-box technologies before parallel process</p>
-                                    <ul class="list-inline social-list-default social-color icon-hover-top-bottom">
-                                        <li class="list-inline-item">
-                                            <a class="facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="dribbble" href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
-                                        </li>
-                                        <li class="list-inline-item">
-                                            <a class="linkedin" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-            <!--our team section end-->
-
-            <!--testimonial section start-->
-            <section class="position-relative gradient-bg ptb-100">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 col-lg-5 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
-                            <div class="testimonial-heading text-white">
-                                <h2 class="text-white">What Our Client Say About Pickmor</h2>
-                                <p>Collaboratively actualize excellent schemas without effective models. Synergistically engineer functionalized applications rather than backend e-commerce.</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6">
-                            <div class="testimonial-content-wrap">
-                                <div class="owl-carousel owl-theme client-testimonial-1 dot-indicator testimonial-shape">
-                                    <div class="item">
-                                        <div class="testimonial-quote-wrap">
-                                            <div class="media author-info mb-3">
-                                                <div class="author-img mr-3">
-                                                    <img src="{{asset('/assets/images/1_1.jpg')}}" alt="client" class="img-fluid">
-                                                </div>
-                                                <div class="media-body text-white">
-                                                    <h5 class="mb-0 text-white">John Charles</h5>
-                                                    <span>Head Of Admin</span>
-                                                </div>
-                                                <i class="fas fa-quote-right text-white"></i>
-                                            </div>
-                                            <div class="client-say text-white">
-                                                <p>Interactively optimize fully researched expertise vis-a-vis plug-and-play relationships. Intrinsicly develop viral core competencies for fully tested customer service. Enthusiastically create next-generation growth strategies and.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="testimonial-quote-wrap">
-                                            <div class="media author-info mb-3">
-                                                <div class="author-img mr-3">
-                                                    <img src="{{asset('/assets/images/2_1.jpg')}}" alt="client" class="img-fluid">
-                                                </div>
-                                                <div class="media-body text-white">
-                                                    <h5 class="mb-0 text-white">Arabella Ora</h5>
-                                                    <span>HR Manager</span>
-                                                </div>
-                                                <i class="fas fa-quote-right text-white"></i>
-                                            </div>
-                                            <div class="client-say text-white">
-                                                <p>Rapidiously develop user friendly growth strategies after extensive initiatives. Conveniently grow innovative benefits through fully tested deliverables. Rapidiously utilize focused platforms through end-to-end schemas.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="testimonial-quote-wrap">
-                                            <div class="media author-info mb-3">
-                                                <div class="author-img mr-3">
-                                                    <img src="{{asset('/assets/images/3_1.jpg')}}" alt="client" class="img-fluid">
-                                                </div>
-                                                <div class="media-body text-white">
-                                                    <h5 class="mb-0 text-white">Jeremy Jere</h5>
-                                                    <span>Team Leader</span>
-                                                </div>
-                                                <i class="fas fa-quote-right text-white"></i>
-                                            </div>
-                                            <div class="client-say text-white">
-                                                <p>Objectively synthesize client-centered e-tailers for maintainable channels. Holisticly administrate customer directed vortals whereas tactical functionalities. Energistically monetize reliable imperatives through client-centric.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="testimonial-quote-wrap">
-                                            <div class="media author-info mb-3">
-                                                <div class="author-img mr-3">
-                                                    <img src="{{asset('/assets/images/4.jpg')}}" alt="client" class="img-fluid">
-                                                </div>
-                                                <div class="media-body text-white">
-                                                    <h5 class="mb-0 text-white">John Charles</h5>
-                                                    <span>Marketing Head</span>
-                                                </div>
-                                                <i class="fas fa-quote-right text-white"></i>
-                                            </div>
-                                            <div class="client-say text-white">
-                                                <p>Enthusiastically innovate B2C data without clicks-and-mortar convergence. Monotonectally deliver compelling testing procedures vis-a-vis B2B testing procedures. Competently evisculate integrated resources whereas global.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--testimonial section end-->
-
-            <!--our contact section start-->
-            <section id="contact" class="contact-us-section ptb-100">
-                <div class="container">
-                    <div class="row justify-content-around">
-                        <div class="col-12 pb-3 message-box d-none">
-                            <div class="alert alert-danger"></div>
-                        </div>
-                        <div class="col-md-12 col-lg-5 mb-5 mb-md-5 mb-sm-5 mb-lg-0">
-                            <div class="contact-us-form gray-light-bg rounded p-5">
-                                <h4>Ready to get started?</h4>
-                                <form action="" method="POST" id="contactForm" class="contact-us-form">
-                                    <div class="form-row">
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" name="name" placeholder="Enter name" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" name="email" placeholder="Enter email" required="required">
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-group">
-                                                <textarea name="message" id="message" class="form-control" rows="7" cols="25" placeholder="Message"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 mt-3">
-                                            <button type="submit" class="btn btn-brand-02" id="btnContactUs">
-                                                Send Message
-                                            </button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="col-md-12 col-lg-6">
-                            <div class="contact-us-content">
-                                <h2>Looking for a excellent Business idea?</h2>
-                                <p class="lead">Give us a call or drop by anytime, we endeavour to answer all enquiries within 24 hours on business days.</p>
-
-                                <a href="#" class="btn btn-outline-brand-01 align-items-center">Get Directions <span class="ti-arrow-right pl-2"></span></a>
-
-                                <hr class="my-5">
-
-                                <ul class="contact-info-list">
-                                    <li class="d-flex pb-3">
-                                        <div class="contact-icon mr-3">
-                                            <span class="fas fa-location-arrow color-primary rounded-circle p-3"></span>
-                                        </div>
-                                        <div class="contact-text">
-                                            <h5 class="mb-1">Company Location</h5>
-                                            <p>
-                                                100 Yellow House, Mn Factory, United State, 13420
-                                            </p>
-                                        </div>
-                                    </li>
-                                    <li class="d-flex pb-3">
-                                        <div class="contact-icon mr-3">
-                                            <span class="fas fa-envelope color-primary rounded-circle p-3"></span>
-                                        </div>
-                                        <div class="contact-text">
-                                            <h5 class="mb-1">Email Address</h5>
-                                            <p>
-                                                hello@yourdomain.com
-                                            </p>
-                                        </div>
-                                    </li>
-                                </ul>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--our contact section end-->
-
-            <!--our blog section start-->
-            <section class="our-blog-section ptb-100 gray-light-bg">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-9 col-lg-8">
-                            <div class="section-heading text-center">
-                                <h2>Our Latest News</h2>
-                                <p>
-                                    Efficiently matrix robust total linkage after market positioning bandwidth. Holisticly restore B2B materials rather than brand flexible paradigms vis-a-vis mission-critical e-commerce.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="single-blog-card card border-0 shadow-sm mt-4">
-                                <div class="blog-img position-relative">
-                                    <img src="{{asset('/assets/images/1.jpg')}}" class="card-img-top" alt="blog">
-                                    <div class="meta-date">
-                                        <strong>24</strong>
-                                        <small>Apr</small>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="post-meta mb-2">
-                                        <ul class="list-inline meta-list">
-                                            <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                                Comments
-                                            </li>
-                                            <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                                Share
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="h5 mb-2 card-title"><a href="#">Appropriately productize fully</a></h3>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the
-                                        bulk.</p>
-                                    <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="single-blog-card card border-0 shadow-sm mt-4">
-                                <div class="blog-img position-relative">
-                                    <img src="{{asset('/assets/images/2.jpg')}}" class="card-img-top" alt="blog">
-                                    <div class="meta-date">
-                                        <strong>24</strong>
-                                        <small>Apr</small>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="post-meta mb-2">
-                                        <ul class="list-inline meta-list">
-                                            <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                                Comments
-                                            </li>
-                                            <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                                Share
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="h5 mb-2 card-title"><a href="#">Quickly formulate backend</a></h3>
-                                    <p class="card-text">Synergistically engage effective ROI after customer directed
-                                        partnerships.</p>
-                                    <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="single-blog-card card border-0 shadow-sm mt-4">
-                                <div class="blog-img position-relative">
-                                    <img src="{{asset('/assets/images/3.jpg')}}" class="card-img-top" alt="blog">
-                                    <div class="meta-date">
-                                        <strong>24</strong>
-                                        <small>Apr</small>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="post-meta mb-2">
-                                        <ul class="list-inline meta-list">
-                                            <li class="list-inline-item"><i class="fas fa-heart mr-2"></i><span>45</span>
-                                                Comments
-                                            </li>
-                                            <li class="list-inline-item"><i class="fas fa-share-alt mr-2"></i><span>10</span>
-                                                Share
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <h3 class="h5 mb-2 card-title"><a href="#">Objectively extend extensive</a></h3>
-                                    <p class="card-text">Holisticly mesh open-source leadership rather than proactive
-                                        users. </p>
-                                    <a href="#" class="detail-link">Read more <span class="ti-arrow-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--our blog section end-->
-
-            <!--our team section start-->
-            <section class="client-section  ptb-100">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-8">
-                            <div class="section-heading text-center mb-5">
-                                <h2>Our Valuable Customers</h2>
-                                <p>
-                                    Rapidiously morph transparent internal or sources whereas resource sucking e-business. Conveniently innovate compelling internal.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-md-12">
-                            <div class="owl-carousel owl-theme clients-carousel dot-indicator">
-                                <div class="item single-customer">
-                                    <img src="{{asset('/assets/images/clients-logo-01.png')}}" alt="client logo" class="customer-logo">
-                                </div>
-                                <div class="item single-customer">
-                                    <img src="{{asset('/assets/images/clients-logo-02.png')}}" alt="client logo" class="customer-logo">
-                                </div>
-                                <div class="item single-customer">
-                                    <img src="{{asset('/assets/images/clients-logo-03.png')}}" alt="client logo" class="customer-logo">
-                                </div>
-                                <div class="item single-customer">
-                                    <img src="{{asset('/assets/images/clients-logo-04.png')}}" alt="client logo" class="customer-logo">
-                                </div>
-                                <div class="item single-customer">
-                                    <img src="{{asset('/assets/images/clients-logo-05.png')}}" alt="client logo" class="customer-logo">
-                                </div>
-                                <div class="item single-customer">
-                                    <img src="{{asset('/assets/images/clients-logo-06.png')}}" alt="client logo" class="customer-logo">
-                                </div>
-                                <div class="item single-customer">
-                                    <img src="{{asset('/assets/images/clients-logo-07.png')}}" alt="client logo" class="customer-logo">
-                                </div>
-                                <div class="item single-customer">
-                                    <img src="{{asset('/assets/images/clients-logo-08.png')}}" alt="client logo" class="customer-logo">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--our team section end-->
-
-        </div>
-
-        <!--footer bottom copyright start-->
-        <footer class="footer-1 ptb-60 gradient-bg">
+    <header>
+        <nav class="navbar navbar-expand-lg" id="mainNav">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 col-lg-4 mb-4 mb-md-4 mb-sm-4 mb-lg-0">
-                        <a href="#" class="navbar-brand mb-2">
-                            <img src="{{asset('/assets/images/logo-white.png')}}" alt="logo" class="img-fluid">
-                        </a>
-                        <br>
-                        <p>Dynamically re-engineer high standards in functiona with alternative paradigms. Conveniently monetize resource maximizing initiatives.</p>
-                        <div class="list-inline social-list-default background-color social-hover-2 mt-2">
-                            <li class="list-inline-item"><a class="twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li class="list-inline-item"><a class="youtube" href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li class="list-inline-item"><a class="linkedin" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li class="list-inline-item"><a class="dribbble" href="#"><i class="fab fa-dribbble"></i></a></li>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-8">
-                        <div class="row mt-0">
-                            <div class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
-                                <h6 class="text-uppercase">Resources</h6>
-                                <ul>
-                                    <li>
-                                        <a href="#">Help</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Events</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Live sessions</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Open source</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Documentation</a>
-                                    </li>
-                                </ul>
+                <a class="navbar-brand" href="/">
+                    <img src="{{asset('/assets/images/logo.png')}}" alt="Logo" class="logo">
+                </a>
+                <div class="d-flex flex-row align-items-center order-2 order-lg-3">
+                    <select class="language-select">
+                        <option value="english">En</option>
+                        <option value="australia">Aus</option>
+                        <option value="brazil">Bra</option>
+                        <option value="argentina">Arg</option>
+                    </select>
+                    <a class="d-none d-md-block download button" href="#appStore">Download Now</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#primaryNav" aria-controls="primaryNav" aria-expanded="false" aria-label="Toggle Primary Nav">
+                        <span class="icon-bar top-bar"></span>
+                        <span class="icon-bar middle-bar"></span>
+                        <span class="icon-bar bottom-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse align-items-center justify-content-end order-3 order-lg-2" id="primaryNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#whyPickmor">Why Pickmor</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#virtual">Virtual Card</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#plan">Plan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Testimonials</a>
+                        </li>
+                        <li class="nav-item d-block d-md-none">
+                            <a class="nav-link download" href="#appStore">Download Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero bg-img" data-background="{{asset('/assets/images/hero-bg.png')}}">
+        <div class="container">
+            <div class="hero__area">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-7">
+                        <div class="hero__content">
+                            <h6 class="wow animate__animated animate__fadeInUp">Security - Privacy - User friendly</h6>
+                            <h1 class="wow animate__animated animate__fadeInUp">One App, All Things Money</h1>
+                            <p class="large wow animate__animated animate__fadeInUp">
+                                From easy money management,crypto investments and trade. Open your Pickmor account.
+                            </p>
+                            <div class="hero__content__link wow animate__animated animate__fadeInUp">
+                                <a href="#">
+                                    <img src="{{asset('/assets/images/app-store.png')}}" alt="Apple Store">
+                                </a>
+                                <a href="#">
+                                    <img src="{{asset('/assets/images/play-store.png')}}" alt="Google Play Store">
+                                </a>
                             </div>
-                            <div class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
-                                <h6 class="text-uppercase">Products</h6>
-                                <ul>
-                                    <li>
-                                        <a href="#">Pricing</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Navigation</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">AI Studio</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Page Speed </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Performance</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6 col-md-3 col-lg-3 mb-4 mb-sm-4 mb-md-0 mb-lg-0">
-                                <h6 class="text-uppercase">Company</h6>
-                                <ul>
-                                    <li>
-                                        <a href="#">About Us</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Careers</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Customers</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Community</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Our Team</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-sm-6 col-md-3 col-lg-3">
-                                <h6 class="text-uppercase">Support</h6>
-                                <ul>
-                                    <li>
-                                        <a href="#">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sells</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Contact Support</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Network Status</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Product Services</a>
-                                    </li>
-                                </ul>
+                            <div class="hero__ratings">
+                                <div class="hero__ratings__store wow animate__animated animate__fadeInUp">
+                                    <h2>4.5/5</h2>
+                                    <div class="hero__ratings__star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p>On the iOS App Store</p>
+                                </div>
+                                <div class="hero__ratings__store wow animate__animated animate__fadeInUp" data-wow-delay="0.s">
+                                    <h2>4.5/5</h2>
+                                    <div class="hero__ratings__star">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <p>On the iOS App Store</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--end of container-->
-        </footer>
+        </div>
+        <div class="hero__img wow animate__animated animate__fadeInTopRight">
+            <img src="{{asset('/assets/images/circle.png')}}" alt="circle" class="hero__circle">
+            <img src="{{asset('/assets/images/wallet.png')}}" alt="Wallet" class="hero__wallet">
+            <img src="{{asset('/assets/images/mockup.png')}}" alt="mockup" class="hero__mock">
+        </div>
+    </section>
 
-        <div class="footer-bottom py-3 gray-light-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-7">
-                        <div class="copyright-wrap small-text">
-                            <p class="mb-0">© Pickmor, All rights reserved</p>
+    <div class="client">
+        <div class="container">
+            <div class="client__wrapper wow animate__animated animate__fadeInUp">
+                <h3 class="text-center wow animate__animated animate__fadeInUp">More than 1,200,000 creative people use
+                    it</h3>
+                <div class="client__logo__wrapper owl-carousel owl-theme wow animate__animated animate__fadeInUp">
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/one.png')}}" alt="Client">
+                    </div>
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/two.png')}}" alt="Client">
+                    </div>
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/three.png')}}" alt="Client">
+                    </div>
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/four.png')}}" alt="Client">
+                    </div>
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/five.png')}}" alt="Client">
+                    </div>
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/one.png')}}" alt="Client">
+                    </div>
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/two.png')}}" alt="Client">
+                    </div>
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/three.png')}}" alt="Client">
+                    </div>
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/four.png')}}" alt="Client">
+                    </div>
+                    <div class="client__logo">
+                        <img src="{{asset('/assets/images/five.png')}}" alt="Client">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="invest" id="features">
+        <div class="container">
+            <div class="invest__area">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <div class="invest__thumb wow animate__animated animate__fadeInLeft">
+                            <img src="{{asset('/assets/images/invest-illustration.png')}}" alt="Invest">
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-5">
-                        <div class="terms-policy-wrap text-lg-right text-md-right text-left">
-                            <ul class="list-inline">
-                                <li class="list-inline-item"><a class="small-text" href="#">Terms</a></li>
-                                <li class="list-inline-item"><a class="small-text" href="#">Security</a></li>
-                                <li class="list-inline-item"><a class="small-text" href="#">Privacy Policy</a></li>
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="invest__content">
+                            <h6 class="wow animate__animated animate__fadeInUp">Payments app for Everyday essentials
+                            </h6>
+                            <h2 class="wow animate__animated animate__fadeInUp">Send, receive and invest money right
+                                from your phone</h2>
+                            <p class="wow animate__animated animate__fadeInUp">Make day-to-day spending a breeze with
+                                all things money in one place</p>
+                            <div class="invest__feature__wrapper">
+                                <div class="invest__feature__item wow animate__animated animate__fadeInUp">
+                                    <div class="invest__feature__item__img">
+                                        <img src="{{asset('/assets/images/built.png')}}" alt="Digigtal Wallet">
+                                    </div>
+                                    <div class="invest__feature__item__content">
+                                        <h6>Built-in digital wallet</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="invest__feature__item wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                                    <div class="invest__feature__item__img">
+                                        <img src="{{asset('/assets/images/payments.png')}}" alt="Payments">
+                                    </div>
+                                    <div class="invest__feature__item__content">
+                                        <h6>Send &amp; Receive payments</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="invest__feature__item wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                                    <div class="invest__feature__item__img">
+                                        <img src="{{asset('/assets/images/reports.png')}}" alt="Digigtal Wallet">
+                                    </div>
+                                    <div class="invest__feature__item__content">
+                                        <h6>Monthly &amp; weekly reports</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="invest__feature__item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                    <div class="invest__feature__item__img">
+                                        <img src="{{asset('/assets/images/cards.png')}}" alt="Digigtal Wallet">
+                                    </div>
+                                    <div class="invest__feature__item__content">
+                                        <h6>Virtual credit cards</h6>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wallet bg-img" data-background="{{asset('/assets/images/wallet-bg.png')}}">
+        <div class="container">
+            <div class="wallet__area">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="wallet__content">
+                            <h6 class="wow animate__animated animate__fadeInUp">Buy growing crypto right from your phone
+                            </h6>
+                            <h2 class="wow animate__animated animate__fadeInUp">A crypto wallet from the future</h2>
+                            <p class="wow animate__animated animate__fadeInUp">Dictum fusce ut placerat orci nulla
+                                pellentesque nulla facilisi nullam vehicula ipsum eu
+                                volutpat odio facilisis.</p>
+                            <ul class="wow animate__animated animate__fadeInUp">
+                                <li class="large"><i class="fas fa-check"></i> Lowest fees in market</li>
+                                <li class="large"><i class="fas fa-check"></i> Fast and secure transactions</li>
+                                <li class="large"><i class="fas fa-check"></i> Fast and secure transactions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <div class="wallet__thumb">
+                            <img src="{{asset('/assets/images/wallet_1.png')}}" alt="Future Wallet">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="design">
+        <div class="container">
+            <div class="design__area">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <div class="design__thumb wow animate__animated animate__fadeInLeft">
+                            <img src="{{asset('/assets/images/design-illustration.png')}}" alt="Design">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="design__content">
+                            <h6 class="wow animate__animated animate__fadeInUp">Security that’s strong as oak</h6>
+                            <h2 class="wow animate__animated animate__fadeInUp">Bulletproof security by design</h2>
+                            <p class="wow animate__animated animate__fadeInUp">We use bank-level security, 256-bit
+                                encryption, and allow two-factor authentication for
+                                added security.</p>
+                            <div class="design__content__security">
+                                <div class="design__content__cards">
+                                    <div class="design__content__cards__item wow animate__animated animate__fadeInUp">
+                                        <h6>0</h6>
+                                        <p>Security incidents</p>
+                                    </div>
+                                    <div class="design__content__cards__item wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                                        <h6>256 bits</h6>
+                                        <p>AES encryption</p>
+                                    </div>
+                                </div>
+                                <div class="design__content__cards">
+                                    <div class="design__content__cards__item third--item wow animate__animated animate__fadeInUp">
+                                        <h6>CISA+</h6>
+                                        <p>Security certification</p>
+                                    </div>
+                                    <div class="design__content__cards__item fourth--item wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                                        <h6>100%</h6>
+                                        <p>Encrypted data</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="choice bg-img" id="whyPickmor" data-background="{{asset('/assets/images/choice-bg.png')}}">
+        <div class="choice__area">
+            <div class="choice__title">
+                <h6 class="text-center wow animate__animated animate__fadeInUp">Why Pickmor</h6>
+                <h2 class="text-center wow animate__animated animate__fadeInUp">Learn Why Pickmor is the Right Choice for
+                    you</h2>
+                <p class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Join 16+ mil people
+                    who already trust us with their money </p>
+            </div>
+            <div class="choice__slider owl-carousel owl-theme wow animate__animated animate__fadeInUp">
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/payments_1.png')}}" alt="Secure Payments">
+                    <h6>Secure payments</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/withdrawal.png')}}" alt="Secure withdrawals">
+                    <h6>Free cash withdrawals</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/investing.png')}}" alt="Secure Invest">
+                    <h6>Investing features</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/crypto.png')}}" alt="Crypto support">
+                    <h6>Crypto support</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/hidden.png')}}" alt="No hidden fees">
+                    <h6>No hidden fees</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/support.png')}}" alt="World class support">
+                    <h6>World class support</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/payments_1.png')}}" alt="Secure Payments">
+                    <h6>Secure payments</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/withdrawal.png')}}" alt="Secure withdrawals">
+                    <h6>Free cash withdrawals</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/investing.png')}}" alt="Secure Invest">
+                    <h6>Investing features</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/crypto.png')}}" alt="Crypto support">
+                    <h6>Crypto support</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/hidden.png')}}" alt="No hidden fees">
+                    <h6>No hidden fees</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+                <div class="choice__slider__item">
+                    <img src="{{asset('/assets/images/support.png')}}" alt="World class support">
+                    <h6>World class support</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="payment" id="virtual">
+        <div class="container">
+            <div class="payment__area">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <div class="payment__thumb wow animate__animated animate__fadeInLeft">
+                            <img src="{{asset('/assets/images/card-bg.png')}}" alt="Payments">
+                            <img src="{{asset('/assets/images/card-one.png')}}" alt="Crad" class="card-one">
+                            <img src="{{asset('/assets/images/card-two.png')}}" alt="Card" class="card-two">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="payment__content">
+                            <h6 class="wow animate__animated animate__fadeInUp">Get Your Card</h6>
+                            <h2 class="wow animate__animated animate__fadeInUp">One card for all your onlne payments
+                            </h2>
+                            <p class="wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing elit. Quisque tristique tincidunt
+                                arcu.</p>
+                            <ul class="wow animate__animated animate__fadeInUp">
+                                <li class="large"><i class="fas fa-check"></i> Lowest fees in market</li>
+                                <li class="large"><i class="fas fa-check"></i> Fast and secure transactions</li>
+                                <li class="large"><i class="fas fa-check"></i> Fast and secure transactions</li>
+                            </ul>
+                            <div class="hero__content__link wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                                <a href="#" class="button">Get Virtual Card</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="work bg-img" data-background="{{asset('/assets/images/choice-bg.png')}}">
+        <div class="container">
+            <div class="work__area">
+                <div class="choice__title">
+                    <h6 class="text-center wow animate__animated animate__fadeInUp">How Does It Works</h6>
+                    <h2 class="text-center wow animate__animated animate__fadeInUp">Follow Some Simple Steps For Using
+                        Pickmor</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="work__item text-center work__item--primary wow animate__animated animate__fadeInUp">
+                            <img src="{{asset('/assets/images/withdrawal.png')}}" alt="Install">
+                            <h6 class="text-center">Install Our App</h6>
+                            <p class="text-center">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="work__item text-center work__item--secondary wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                            <img src="{{asset('/assets/images/account.png')}}" alt="Account">
+                            <h6 class="text-center">Set Up Your Account</h6>
+                            <p class="text-center">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="work__item text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                            <img src="{{asset('/assets/images/secure.png')}}" alt="Secure">
+                            <h6 class="text-center">Secure Payments</h6>
+                            <p class="text-center">It is a long established fact that a reader will be distracted by the
+                                readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="shot">
+        <div class="container">
+            <div class="shot__area">
+                <div class="choice__title">
+                    <h6 class="text-center wow animate__animated animate__fadeInUp">A beautiful way to present</h6>
+                    <h2 class="text-center wow animate__animated animate__fadeInUp">App screenshots</h2>
+                    <p class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">The simple,
+                        intuitive and powerful app to manage your work.The only app
+                        you’ll need to power your life.Learn how:</p>
+                </div>
+            </div>
+        </div>
+        <div class="shot__slider__wrapper wow animate__animated animate__fadeInUp">
+            <div class="shot__slider owl-carousel owl-theme">
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-one.png')}}" alt="Screenshot">
+                </div>
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-two.png')}}" alt="Screenshot">
+                </div>
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-one.png')}}" alt="Screenshot">
+                </div>
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-four.png')}}" alt="Screenshot">
+                </div>
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-five.png')}}" alt="Screenshot">
+                </div>
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-one.png')}}" alt="Screenshot">
+                </div>
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-two.png')}}" alt="Screenshot">
+                </div>
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-one.png')}}" alt="Screenshot">
+                </div>
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-four.png')}}" alt="Screenshot">
+                </div>
+                <div class="shot__item">
+                    <img src="{{asset('/assets/images/shot-five.png')}}" alt="Screenshot">
+                </div>
+            </div>
+            <div class="slide__button">
+                <a href="javascript:void(0)" class="prev">
+                    <img src="{{asset('/assets/images/arrow.png')}}" alt="Previous">
+                </a>
+                <a href="javascript:void(0)" class="next">
+                    <img src="{{asset('/assets/images/arrow.png')}}" alt="Next">
+                </a>
+            </div>
+            <img src="{{asset('/assets/images/dev.png')}}" alt="Device" class="device">
+        </div>
+    </section>
+
+    <div class="pricing bg-img" id="plan" data-background="{{asset('/assets/images/pricing-bg.png')}}">
+        <div class="container">
+            <div class="pricing__area">
+                <div class="choice__title">
+                    <h6 class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">Our Plans</h6>
+                    <h2 class="text-center wow animate__animated animate__fadeInUp">Pickmor Plans for Everyone</h2>
+                    <p class="text-center wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Lorem ipsum
+                        dolor sit amet, consectetur adipiscing elit. Quisque tristique
+                        tincidunt arcu.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="pricing__item wow animate__animated animate__fadeInUp">
+                            <img src="{{asset('/assets/images/basic.png')}}" alt="Basic">
+                            <h6>Basic</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h2>$ 5.00 USD</h2>
+                            <p>/monthly</p>
+                            <a href="#" class="button">Learn More</a>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Up to 3 credit cards</li>
+                                <li><i class="fas fa-check"></i> Invest in stocks and ETFs</li>
+                                <li><i class="fas fa-check"></i> Personal profile only</li>
+                                <li><i class="fas fa-check"></i> Normal customer support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="pricing__item pricing__item--standard wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                            <div class="standard__inner">
+                                <img src="{{asset('/assets/images/standard.png')}}" alt="Standard">
+                                <h6>Standard</h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                                <h2>$ 9.00 USD</h2>
+                                <p>/monthly</p>
+                                <a href="#" class="button">Learn More</a>
+                                <ul>
+                                    <li><i class="fas fa-check"></i> All in Basic, plus</li>
+                                    <li><i class="fas fa-check"></i> Up to 10 credit cards</li>
+                                    <li><i class="fas fa-check"></i> Invest in stocks and cryptos</li>
+                                    <li><i class="fas fa-check"></i> Premium customer support</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="pricing__item pricing--three wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                            <img src="{{asset('/assets/images/pro.png')}}" alt="Pro">
+                            <h6>Pro</h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            <h2>$ 19.00 USD</h2>
+                            <p>/monthly</p>
+                            <a href="#" class="button">Learn More</a>
+                            <ul>
+                                <li><i class="fas fa-check"></i> All in Standard, plus</li>
+                                <li><i class="fas fa-check"></i> Unlimited credit cards</li>
+                                <li><i class="fas fa-check"></i> AI-powered investing system</li>
+                                <li><i class="fas fa-check"></i> Dedicated customer support</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-    <!--scroll bottom to top button start-->
-    <div class="scroll-top scroll-to-target primary-bg text-white" data-target="html">
-        <span class="fas fa-hand-point-up"></span>
     </div>
 
-    <script src="{{ asset('/assets/js/jquery-3.5.1.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/popper.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/jquery.easing.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/owl.carousel.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/countdown.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/jquery.waypoints.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/jquery.rcounterup.js') }}"></script>
-    <script src="{{ asset('/assets/js/magnific-popup.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/validator.min.js') }}"></script>
-    <script src="{{ asset('/assets/js/app.js') }}"></script>
+    <section class="testimonial" id="testimonial">
+        <div class="container">
+            <div class="testimonial__area">
+                <div class="row d-flex align-items-start">
+                    <div class="col-lg-6">
+                        <div class="testimonial__left">
+                            <div class="testimonial__item bg-img wow animate__animated animate__fadeInUp" data-background="{{asset('/assets/images/quote.png')}}">
+                                <h6><q>The best fintech app</q></h6>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since.</p>
+                                <div class="testimonial__author">
+                                    <img src="{{asset('/assets/images/john.png')}}" alt="Avatar">
+                                    <div class="testimonial__author__info">
+                                        <h6>John Carter</h6>
+                                        <p>Japan</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="testimonial__content">
+                            <h6 class="wow animate__animated animate__fadeInUp">Testimonials</h6>
+                            <h2 class="wow animate__animated animate__fadeInUp">Don't take our word for it, take theirs
+                            </h2>
+                            <p class="wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">Lorem ipsum dolor
+                                sit amet, consectetur adipiscing elit adipiscing mattis ultrices
+                                pellentesque sagittis quam urna.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center testimonial__down">
+                    <div class="col-lg-6">
+                        <div class="testimonial__item wow animate__animated animate__fadeInUp bg-img" data-background="{{asset('/assets/images/quote.png')}}">
+                            <h6><q>Got my card in less than 24 hours</q></h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since.</p>
+                            <div class="testimonial__author">
+                                <img src="{{asset('/assets/images/morgan.png')}}" alt="Avatar">
+                                <div class="testimonial__author__info">
+                                    <h6>Morgan Woods</h6>
+                                    <p>Belgium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="testimonial__item  testimonial__item__secondary bg-img wow animate__animated animate__fadeInUp" data-wow-delay="0.2s" data-background="{{asset('/assets/images/quote.png')}}">
+                            <h6><q>Best online bank ever</q></h6>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                Ipsum has been the industry's standard dummy text ever since.</p>
+                            <div class="testimonial__author">
+                                <img src="{{asset('/assets/images/sophie.png')}}" alt="Avatar">
+                                <div class="testimonial__author__info">
+                                    <h6>Sophie Moore</h6>
+                                    <p>Canada</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="app" id="appStore">
+        <div class="container">
+            <div class="app__area">
+                <div class="app__area__content">
+                    <h2 class="wow animate__animated animate__fadeInUp">Take control of your personal finances today
+                    </h2>
+                    <div class="hero__content__link wow animate__animated animate__fadeInUp">
+                        <a href="#">
+                            <img src="{{asset('/assets/images/app-store.png')}}" alt="Apple Store">
+                        </a>
+                        <a href="#">
+                            <img src="{{asset('/assets/images/play-store.png')}}" alt="Google Play Store">
+                        </a>
+                    </div>
+                </div>
+                <img src="{{asset('/assets/images/android.png')}}" class="android d-none d-xl-block wow animate__animated animate__fadeInUp" alt="Download App">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-img" data-background="{{asset('/assets/images/footer-bg.png')}}">
+        <div class="container">
+            <div class="footer__area">
+                <div class="footer__cta wow animate__animated animate__fadeInUp">
+                    <a href="/">
+                        <img src="{{asset('/assets/images/logo.png')}}" alt="Logo" class="logo">
+                    </a>
+                    <form action="#" method="post" class="wow animate__animated animate__fadeInUp">
+                        <div class="input__group">
+                            <input type="email" name="subscribe" id="subscribe" required="required" placeholder="Your Email Address">
+                            <button type="submit"><i class="fab fa-telegram-plane"></i></button>
+                        </div>
+                    </form>
+                    <div class="footer__social">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__links wow animate__animated animate__fadeInUp">
+                    <a href="#">About</a>
+                    <a href="#">FAQs</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy</a>
+                </div>
+                <div class="footer__credit wow animate__animated animate__fadeInUp">
+                    <p class="text-center">Copyright © <span class="currentYear"></span>.All Rights Reserved By <a href="pickmor.co">Pickmor</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="javascript:void(0)" class="scrollToTop">
+        <i class="fas fa-angle-double-up"></i>
+    </a>
+
+    <!-- jquery-3.6.0 minified source -->
+    <script src="{{asset('/assets/js/jquery.min.js')}}"></script>
+    <!-- bootstrap 5 minified bundle js source -->
+    <script src="{{asset('/assets/js/bootstrap.bundle.min.js')}}"></script>
+    <!-- nice select minified js source -->
+    <script src="{{asset('/assets/js/jquery.nice-select.min.js')}}"></script>
+    <!-- owl carousel-2.3.4 minified js source -->
+    <script src="{{asset('/assets/js/owl.carousel.min.js')}}"></script>
+    <!-- magnific popup-1.1.0 js source -->
+    <script src="{{asset('/assets/js/jquery.magnific-popup.min.js')}}"></script>
+    <!-- wow-1.1.3 minified js source -->
+    <script src="{{asset('/assets/js/wow.min.js')}}"></script>
+    <!-- custom js source -->
+    <script src="{{asset('/assets/js/main.js')}}"></script>
 </body>
 
 </html>
